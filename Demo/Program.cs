@@ -1,5 +1,6 @@
 ﻿using Demo.Interface_Example_01;
 using Demo.Interface_Example_02;
+using Demo.Interface_Example_03;
 
 namespace Demo
 {
@@ -44,6 +45,16 @@ namespace Demo
 
             //SeriesByThree seriesByThree = new SeriesByThree();
             //Print10NumbersFromSeries(seriesByThree); 
+            #endregion
+
+            #region Interface Example 03
+            //Airplane airplane = new Airplane();
+            //airplane.Backward();
+            //airplane.Forward();
+
+            //IMovable movable = new Airplane();
+            //movable.Backward();
+            //movable.Forward(); 
             #endregion
         }
     }
