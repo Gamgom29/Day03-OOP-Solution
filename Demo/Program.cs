@@ -1,9 +1,22 @@
 ﻿using Demo.Interface_Example_01;
+using Demo.Interface_Example_02;
 
 namespace Demo
 {
     internal class Program
     {
+        public static void Print10NumbersFromSeries(ISeries series)
+        {
+            if(series == null) return;
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write($"{series.Current}\t");
+                series.GetNext();
+
+            }
+            series.Reset();
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
             #region Interface Exmaple 01
@@ -23,6 +36,14 @@ namespace Demo
             //referenceFromInterface.Salary = 10_000;
             //referenceFromInterface.MyFun(); // Hello World
             //referenceFromInterface.Print(); 
+            #endregion
+
+            #region Interface Example 02
+            //SeriesByTwo seriesByTwo = new SeriesByTwo();
+            //Print10NumbersFromSeries(seriesByTwo);
+
+            //SeriesByThree seriesByThree = new SeriesByThree();
+            //Print10NumbersFromSeries(seriesByThree); 
             #endregion
         }
     }
