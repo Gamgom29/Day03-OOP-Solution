@@ -1,4 +1,5 @@
 ﻿using Assignment.Question_02;
+using Assignment.Question03;
 
 namespace Assignment
 {
@@ -66,6 +67,19 @@ namespace Assignment
 
             #endregion
 
+            #region Q03
+            SmsNotificationService SMS = new SmsNotificationService();
+            SMS.SendNotification("01143101501", "Hello From Sms Service");
+            Console.WriteLine();
+
+            EmailNotificationService Email = new EmailNotificationService();
+            Email.SendNotification("Amena.route@gmail.com", "Hello Amena");
+            Console.WriteLine();
+
+            PushNotificationService Push = new PushNotificationService();
+            Push.SendNotification("Anounumus@gmail.com", "Hello From the Other Side");
+            Console.WriteLine();
+            #endregion
             #endregion
         }
     }
