@@ -56,6 +56,46 @@ namespace Demo
             //movable.Backward();
             //movable.Forward(); 
             #endregion
+
+            #region Shallow Copy , Deep Copy
+            //int[] Arr01 = { 1, 2, 3 };
+            //int[] Arr02 = { 4, 5, 6 };
+            //Console.WriteLine($"Hash Code Of Arr01 = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Hash Code Of Arr02 = {Arr02.GetHashCode()}");
+
+            #region Shallow Copy
+            //Arr02 = Arr01;
+            ///// Shallow Copy [سطحي]
+            ///// this Object {1,2,3} Has 2 References [Arr01 , Arr02] [اسمين دلع]
+            ///// thid object {4,5,6} Became unReachable Object
+
+            //Console.WriteLine("After Shallow Copy ----------->");
+
+            //Console.WriteLine($"Hash Code Of Arr01 = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Hash Code Of Arr02 = {Arr02.GetHashCode()}");
+
+            //Arr02[0] = 100;
+
+            //Console.WriteLine(Arr01[0]); 
+            #endregion
+
+            #region Deep Copy
+            //Arr02 = (int[]) Arr01.Clone();
+            /// Deep Copy
+            /// Clone Method will Generate new object with new different identity
+            /// this object will have the same object state [data] of caller object "Arr01"
+
+            //Console.WriteLine("After Deep Copy ------------->");
+
+            //Console.WriteLine($"Hash Code Of Arr01 = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Hash Code Of Arr02 = {Arr02.GetHashCode()}");
+
+            //Console.WriteLine("*******************************");
+            //Arr02[0] = 100;
+
+            //Console.WriteLine(Arr01[0]); 
+            #endregion 
+            #endregion
         }
     }
 }
