@@ -11,6 +11,10 @@
             #region Q02 : Which of the following is NOT a valid access modifier for interface members in C#?
             // a) private
             #endregion
+
+            #region Q03 : Can an interface contain fields in C#?
+            //  b) No
+            #endregion
         }
     }
 }
