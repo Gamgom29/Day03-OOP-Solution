@@ -28,6 +28,10 @@
             #region Q06 :Can an interface contain static methods in C#?
             //  a) Yes
             #endregion
+
+            #region َQ7: In C#, can an interface have explicit access modifiers for its members?
+            // b) No, all members are implicitly public
+            #endregion
         }
     }
 }
