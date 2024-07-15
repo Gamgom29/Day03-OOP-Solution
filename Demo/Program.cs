@@ -170,6 +170,21 @@ namespace Demo
             //foreach (Employee employee in employees)
             //    Console.WriteLine(employee); 
             #endregion
+
+            #region Builtin Interface IComparer
+            //Employee[] employees =
+            //{
+            //    new Employee() { Id = 30 , Name = "Eyad" , Salary = 10_000},
+            //    new Employee() { Id = 40 , Name = "Fady" , Salary = 4_000},
+            //    new Employee() { Id = 10 , Name = "Omar" , Salary = 8_000},
+            //    new Employee() { Id = 20 , Name = "Mona" , Salary = 2_000},
+            //};
+
+            //Array.Sort(employees , new EmployeeIDComparer());
+
+            //foreach (Employee employee in employees)
+            //    Console.WriteLine(employee); 
+            #endregion
         }
     }
 }
