@@ -1,5 +1,6 @@
 ﻿namespace Demo
 {
+    
     internal class Program
     {
         static void Main(string[] args)
@@ -22,6 +23,10 @@
 
             #region Q05: Which keyword is used to implement an interface in a class in C#?
             // d) implements
+            #endregion
+
+            #region Q06 :Can an interface contain static methods in C#?
+            //  a) Yes
             #endregion
         }
     }
