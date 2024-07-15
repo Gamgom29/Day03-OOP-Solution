@@ -8,7 +8,7 @@ namespace Demo
     {
         public static void Print10NumbersFromSeries(ISeries series)
         {
-            if(series == null) return;
+            if (series == null) return;
             for (int i = 0; i < 10; i++)
             {
                 Console.Write($"{series.Current}\t");
@@ -94,7 +94,28 @@ namespace Demo
             //Arr02[0] = 100;
 
             //Console.WriteLine(Arr01[0]); 
-            #endregion 
+            #endregion
+            #endregion
+
+            #region Why The Description of Clone Method Say Its Shallow Copy
+            //string[] Names01 = { "Amr", "Mona" };
+            //string[] Names02 = { "Ahmed", "Yassmin" };
+            //Console.WriteLine($"HashCode Of Names01 = {Names01.GetHashCode()}");
+            //Console.WriteLine($"HashCode Of Names01 = {Names02.GetHashCode()}");
+
+            //Names02 = (string[])Names01.Clone();
+            //Console.WriteLine("After Deep Copy ----------->");
+
+            //Console.WriteLine($"HashCode Of Names01 = {Names01.GetHashCode()}");
+            //Console.WriteLine($"HashCode Of Names02 = {Names02.GetHashCode()}");
+
+            //Console.WriteLine("***************************");
+            //Console.WriteLine(Names01[0].GetHashCode());
+            //Console.WriteLine(Names02[0].GetHashCode());
+
+            //Names02[0] = "Khaled";
+
+            //Console.WriteLine(Names01[0]); 
             #endregion
         }
     }
