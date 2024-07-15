@@ -32,6 +32,10 @@
             #region َQ7: In C#, can an interface have explicit access modifiers for its members?
             // b) No, all members are implicitly public
             #endregion
+
+            #region Q08: What is the purpose of an explicit interface implementation in C#?
+            // a) To hide the interface members from outside access
+            #endregion
         }
     }
 }
