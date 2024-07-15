@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo.IColneable_Interface
+namespace Demo.Builtin_Interfaces
 {
-    class Employee : ICloneable
+    class Employee : ICloneable , IComparable
     {
         public int Id { get; set; }
         public string?  Name { get; set; }
@@ -43,6 +43,24 @@ namespace Demo.IColneable_Interface
         public override string ToString()
         {
             return $"Id: {Id} , Name: {Name} , Salary: {Salary}";
+        }
+
+        // +Ve : this.salary > obj.salary
+        // -Ve : this.salary < obj.salary
+        //  0  : this.salary = obg.salary
+        public int CompareTo(object? obj)
+        {
+            Employee? comparedEmployee = (Employee?)obj; // Explicit casting unsafe 
+
+            ///if (this.Salary > comparedEmployee?.Salary)
+            ///    return 1;
+            ///else if (this.Salary < comparedEmployee?.Salary)
+            ///    return -1;
+
+            //return 0 ;
+
+            // - to sort array descinding
+            return  this.Salary.CompareTo(comparedEmployee?.Salary);
         }
     }
 }

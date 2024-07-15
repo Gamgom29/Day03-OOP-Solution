@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo.IColneable_Interface
+namespace Demo.Builtin_Interfaces
 {
     class Department : ICloneable
     {

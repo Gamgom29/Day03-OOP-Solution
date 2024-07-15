@@ -1,4 +1,4 @@
-﻿using Demo.IColneable_Interface;
+﻿using Demo.Builtin_Interfaces;
 using Demo.Interface_Example_01;
 using Demo.Interface_Example_02;
 using Demo.Interface_Example_03;
@@ -145,6 +145,30 @@ namespace Demo
             //employee02.Department.Title = "New";
 
             //Console.WriteLine(employee01.Department.Title); 
+            #endregion
+
+            #region Built in Interfaces ICompareable
+            //int[] Numbers = { 7, 4, 9, 2, 6, 10, 5, 3, 1, 8 };
+
+            //Array.Sort(Numbers);
+            //foreach (int i in Numbers)
+            //    Console.Write($"{i} ");
+
+            //Employee[] employees =
+            //{
+            //    new Employee() { Id = 10 , Name = "Omar" , Salary = 8_000},
+            //    new Employee() { Id = 20 , Name = "Mona" , Salary = 2_000},
+            //    new Employee() { Id = 30 , Name = "Eyad" , Salary = 10_000},
+            //    new Employee() { Id = 40 , Name = "Fady" , Salary = 4_000}
+            //};
+
+            //Array.Sort(employees);
+
+            //int Result = employees[0].CompareTo(employees[1]);
+            //Console.WriteLine(Result);
+
+            //foreach (Employee employee in employees)
+            //    Console.WriteLine(employee); 
             #endregion
         }
     }
