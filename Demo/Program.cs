@@ -1,4 +1,5 @@
-﻿using Demo.Interface_Example_01;
+﻿using Demo.IColneable_Interface;
+using Demo.Interface_Example_01;
 using Demo.Interface_Example_02;
 using Demo.Interface_Example_03;
 
@@ -116,6 +117,34 @@ namespace Demo
             //Names02[0] = "Khaled";
 
             //Console.WriteLine(Names01[0]); 
+            #endregion
+
+            #region ICloneable Interface
+            //Employee employee01 = new Employee() { Id = 10, Name = "Abdelrahman", Salary = 6_0000 , Department = new Department() { Code = 101 , Title = "Sales"} };
+            //Employee employee02 = new Employee() { Id = 20, Name = "Ahmed", Salary = 4_0000, Department = new Department() { Code = 102, Title = "HR" } };
+
+            //Console.WriteLine($"HashCode Of Employee01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"HashCode Of Employee02 {employee02.GetHashCode()}");
+
+            ///* employee02 = (Employee) employee01.Clone()*/; // 2.1 Deep Copy Using Clone Method
+            ///// Deep Copy
+            ///// Clone Method Create new object with new identity 
+            ///// this object will have the same state [data] Of caller object 
+
+            //employee02 = new Employee(employee01); // 2.2 Deep Copy using Copy Constructor
+
+            //Console.WriteLine("After Deep Copy----------------->");
+            //Console.WriteLine($"HashCode Of Employee01 {employee01.GetHashCode()}");
+            //Console.WriteLine($"HashCode Of Employee02 {employee02.GetHashCode()}");
+
+            //Console.WriteLine("======================");
+            //Console.WriteLine(employee01);
+            //Console.WriteLine(employee02);
+
+            //if(employee02.Department is not null)
+            //employee02.Department.Title = "New";
+
+            //Console.WriteLine(employee01.Department.Title); 
             #endregion
         }
     }
