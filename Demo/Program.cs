@@ -19,6 +19,10 @@
             #region Q04 :In C#, can an interface inherit from another interface?
             // b) Yes, interfaces can inherit from multiple interfaces
             #endregion
+
+            #region Q05: Which keyword is used to implement an interface in a class in C#?
+            // d) implements
+            #endregion
         }
     }
 }
