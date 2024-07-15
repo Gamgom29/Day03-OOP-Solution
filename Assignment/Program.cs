@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using Assignment.Question_02;
+
+namespace Assignment
 {
     internal class Program
     {
@@ -49,7 +51,7 @@
             #region Part 02
 
             #region Q01
-            
+
             //Rectangle Rectangle = new Rectangle() { Width = 10 , Height = 20};
             //Rectangle.DisplayShapeInfo();
 
@@ -57,6 +59,12 @@
             //Circle.DisplayShapeInfo();
             #endregion
 
+            #region Q02
+            //IAuthenticationService authService  = new BasicAuthenticationService();
+            //Console.WriteLine( authService.AuthenticateUser("Abdelrahman", "Aa12345"));
+            //Console.WriteLine(authService.AuthorizeUser("Abdelrahman"));
+
+            #endregion
 
             #endregion
         }
